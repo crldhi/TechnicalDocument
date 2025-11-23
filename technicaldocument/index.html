@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+   <main id="main-doc">
+    <nav id="navbar">
+        <header>VScode Documentation</header>
+        <a href="#Overview" class="nav-link">Overview</a>
+        <a href="#Setup" class="nav-link">Setup</a>
+        <a href="#Get_started" class="nav-link">Get started</a>
+        <a href="#Configure" class="nav-link">Configure</a>
+        <a href="#Configure_-_Extension" class="nav-link">Configure - Extension</a>
+        <a href="#Configure-Accessibility" class="nav-link">Configure - Accessibility</a>
+        <a href="#Shortcuts" class="nav-link">Shortcuts</a>
+        <a href="#Build" class="nav-link">Build</a>
+        <a href="#Testing" class="nav-link">Testing</a>
+        <a href="#Debugging" class="nav-link">Debugging</a>
+        <a href="#Languages" class="nav-link">Languages</a>
+        <a href="#Lang-HTML" class="nav-link">HTML</a>
+        <a href="#Lang-CSS" class="nav-link">CSS</a>
+        <a href="#Lang-JavaScript" class="nav-link">JavaScript</a>
+        <a href="#Lang-Python" class="nav-link">Python</a>
+        <a href="#Lang-CSharp" class="nav-link">C#</a>
+        <a href="#Lang-Java" class="nav-link">Java</a>
+        <a href="#Data_Sciences" class="nav-link">Data Sciences</a>
+        <a href="#Intelligent_Apps" class="nav-link">Intelligent Apps</a>
+        <a href="#Dev_Containers" class="nav-link">Dev Containers</a>
+
+
+    </nav>
+        <section class="main-section" id="Overview">
+            <header>
+                Overview
+            </header>
+            <p>Visual Studio Code is a lightweight, high-performance code editor built for developers who need speed, flexibility, and a customizable workspace. It's open source, cross-platform, and basically the standard tool in modern development teams. </p>
+
+            <p>VS Code focuses on efficiency - fast startup, intergrated debugging, Git tools, and, massive extension ecosystem. It's designed to minimize friction and keep you productive.</p>
+
+            <code>Example: code .</code>
+
+            <ul>
+
+            <li>cross-platform (Windows, macOS, Linux)</li>
+            <li>Large extension marketplace</li>
+            <li>Intelligence IntelliSence support</li>
+
+        </section>
+           <br>
+           <br>
+        <section class="main-section" id="Setup">
+            <header>
+                Setup
+            </header>
+            <p>Installing VS Code is quick and painless. You download the installer from the official website, run it, and the editor is ready to launch.</p>
+
+            <p>After installing, you can customize your environment with themes, settings, and extensions to fit your workflow.</p>
+
+            <code> Windows install: Run Installer - Open VS Code</code>
+            <code>Mac Install(Homebrew) - brew install -- cask visual-studio-code</code>
+
+            <br>
+
+            <li>Download the installer</li>
+            <li>Finish te setup wizard</li>
+            <li>Launch VS Code and optionally sign-in</li>
+        </section>
+        <br>
+        <br>
+        <section class="main-section" id="Get_started">
+            <header>
+                Get started
+            </header>
+            <p>When you open VS Code fot the first time, the interface is clean and minimal, giving you a workspace focused on productivity. The Activity Bar provides quick acces to Explorer, Search, Git, Debug, and Extensions.</p>
+
+            <p>You can open entire project folders, split the editor into multiple views, and quickly adjust themes or settings based on how you work.</p>
+
+            <code>File - Open Folder...</code>
+
+            <li>Use the Command Pallete (Ctrl + Shift + P)</li>
+            <li>Open projects form the terminal</li>
+            <li>Split the editor for multitasking</li>
+        </section>
+        <br>
+        <br>
+        <section class="main-section" id="Configure">
+            <header>
+                Configure
+            </header>
+            <p>Vs Code's configuration system is flexible. you can adjust editor behavior, UI layout, themes, and shortcuts either through settings menu or by editing the JSON file directly</p>
+
+            <p>Teams normally use settings.json to enforce consistence formatting and behavior, and VS Code applies changes instantly.</p>
+
+            <code>{ 
+                "editor.tabSize":2,
+                "editor.formatOnSave":ture,
+                "files.autoSave":"afterDelay"
+            }
+            </code>
+            <li>Customize editor options</li>
+            <li>Adjust keybindings</li>
+            <li>Enable auto-format and autosave</li>
+        </section>
+
+        <br>
+        <br>
+        <section class="main-section" id="Configure_-_Extension">
+            <header>
+                Configure - Extension
+            </header>
+            <p>Extensions are where VS Code becomes a full development ecosystem. You can install language packs, linters, debuggers, themes, and productivity tools straight from the marketplace.</p>
+
+            <p>Extension can be installed, disabled, or updated instantly, and syncing lets you keep the same setup across devices.</p>
+
+            <code>Ctrl = Shift + P</code>
+            
+            <li>Language support (Python, Java, C#, JS, HTML, CSS, C++</li>
+            <li>Developer tools (ESLint, Prettier, Docker)</li>
+            <li>Ui enhancement ( thems and icon packs)</li>
+
+            
+        </section>
+        <br>
+        <br>
+        <section class="main-section" id="Accessibility">
+            <header>Configure - Accesiblity</header>
+            <p>VS Code includes built-in accessibility features to support screen readers, high contrast UI, and keyboard-only navigation. Configuring these tools helps users navigate effectively without relying on a mouse.</p>
+            <p>Developers can personalize visuals, enable audio cues, and improve readability for a more inclusive workspace.</p>
+            <br>
+
+            <code>Ctrl + ,  →  Search: "Accessibility"</code>
+            <br>
+
+            <li>Enable screen reader support</li>
+            <li>Switch to High Contrast mode</li>
+            <li>Adjust font size & zoom levels</li>
+
+        </section>
+        <br>
+        <br>
+        <section class="main-section" id="Shortcuts">
+            <header>Shortcuts</header>
+
+            <p>Keyboard shortcuts streamline your workflow and reduce time wasted on repetitive clicking. Mastering them turns VS Code into a productivity machine.</p>
+            <p>They provide fast navigation, quick edits, better search control, and ultra-efficient coding patterns.</p>
+            <br>
+
+            <code>Ctrl + Shift + P → Command Palette</code>
+    <br>
+
+    <li>Ctrl + P — Quick file search</li>
+    <li>Ctrl + N — New file</li>
+    <li>Ctrl + S — Save current file</li>
+    <li>Ctrl + Shift + S — Save all</li>
+    <li>Ctrl + W — Close file</li>
+
+    <li>Ctrl + B — Toggle sidebar</li>
+    <li>Ctrl + Shift + E — Go to Explorer</li>
+    <li>Ctrl + Shift + F — Global search</li>
+    <li>Ctrl + Shift + G — Source control (Git)</li>
+    <li>Ctrl + Shift + X — Extensions panel</li>
+
+    <li>Ctrl + / — Toggle line comment</li>
+    <li>Ctrl + Shift + A — Block comment</li>
+    <li>Alt + Shift + F — Format code</li>
+    <li>Alt + Up/Down — Move line up/down</li>
+    <li>Shift + Alt + Down/Up — Duplicate line</li>
+
+    <li>Ctrl + F — Find in file</li>
+    <li>Ctrl + H — Replace in file</li>
+    <li>Ctrl + D — Select next matching word</li>
+    <li>Ctrl + L — Select whole line</li>
+    <li>Ctrl + Shift + L — Select all occurrences</li>
+
+    <li>Ctrl + ` — Toggle terminal</li>
+    <li>Ctrl + Shift + ` — New terminal</li>
+
+    <li>Ctrl + Tab — Switch tabs</li>
+    <li>Ctrl + 1 / Ctrl + 2 / Ctrl + 3 — Switch editor groups</li>
+    <li>Ctrl + \ — Split editor</li>
+    <li>Ctrl + K + Ctrl + W — Close all editors</li>
+
+    <li>F2 — Rename variable/function/file</li>
+    <li>F5 — Start debugging</li>
+    <li>Shift + F5 — Stop debugging</li>
+    <li>F9 — Toggle breakpoint</li>
+    <li>F10 — Step over</li>
+    <li>F11 — Step into</li>
+</section>
+
+<br>
+<br>
+    <section class="main-section" id="Build">
+        <header>Build</header>
+
+        <p>You can build apps directly from VS Code using the terminal or build tools extensions.</p>
+        <p>Set script commands in package managers (like npm) for one-click deployment.</p>
+
+        <code>npm run build</code>
+
+        <li>Supports C/C++, Node.js, Java, .NET, Python builds</li>
+        <li>Automate build steps using tasks</li>
+    </section>
+    <br>
+    <br>
+    <section class="main-section" id="Testing">
+
+        <header>Testing</header>
+
+        <p>Testing inside VS Code keeps you from flipping between tools. Extensions give visual feedback for failed tests.</p>
+        <p>Just plug in your framework: Jest, Mocha, PyTest, NUnit, etc.</p>
+
+        <code>Ctrl + Shift + P → “Run Test”</code>
+
+        <li>Unit test support built in via extensions</li>
+        <li>Test Explorer UI panel for quick checks</li>
+    </section>
+    <br>
+    <br>
+         <section class="main-section" id="Debugging">
+
+        <header>Debugging</header>
+
+        <p>Breakpoints + stepping controls turn debugging into an actual workflow, not a panic button.</p>
+        <p>VS Code supports debugging for nearly every language.</p>
+
+        <code>F5 → Start Debugging</code>
+
+        <li>F9 → Add/remove breakpoint</li>
+        <li>F10 → Step over</li>
+        <li>F11 → Step into</li>
+        <li>Shift + F5 → Stop debugging</li>
+
+    </section>
+
+    <!-- LANGUAGES MAIN -->
+<section class="main-section" id="Languages">
+    <header>Languages</header>
+    <p>VS Code supports literally every modern programming language, but some have deeper integration thanks to official extensions, debugging tools, and IntelliSense upgrades.</p>
+    <p>Below are the top language setups developers actually use today — optimized for better autocomplete, formatting, linting, and debugging.</p>
+    <code>Ctrl + Shift + X → Search language extensions</code>
+    <li>HTML & CSS (front-end basics)</li>
+    <li>JavaScript (web, backend, automation)</li>
+    <li>Python (AI, data science, backend)</li>
+    <li>C# (enterprise, game dev w/ Unity)</li>
+    <li>Java (enterprise, mobile, backend)</li>
+</section>
+<br>
+<br>
+<section class="main-section" id="Lang-HTML">
+    <header>HTML</header>
+    <p>HTML is the foundation of any web UI, and VS Code boosts productivity with autocomplete snippets and live preview support.</p>
+    <p>Install extension: <strong>HTML Language Features</strong> (built-in)</p>
+    <code>! + Tab → Auto-generate page boilerplate</code>
+    <li>Autocomplete for tags + attributes</li>
+    <li>Auto-close + Emmet support</li>
+    <li>Live Server for real-time preview</li>
+</section>
+<br>
+<br>
+<section class="main-section" id="Lang-CSS">
+    <header>CSS</header>
+    <p>CSS becomes way faster in VS Code thanks to live styling previews and autocomplete for properties, colors, variables, and tailwind classes if installed.</p>
+    <p>Install extension: <strong>Live Sass Compiler</strong> (optional)</p>
+    <code>Ctrl + Space → Suggest CSS properties</code>
+    <li>Color previews in editor</li>
+    <li>Variables + class suggestions</li>
+    <li>Sass/Less compilation support</li>
+</section>
+<br>
+<br>
+<section class="main-section" id="Lang-JavaScript">
+    <header>JavaScript</header>
+    <p>JS is the powerhouse of the modern web. VS Code is built around it, so the support is insanely strong — from debugging to Node.js integration.</p>
+    <p>Install recommended: <strong>ESLint</strong>, <strong>Prettier</strong></p>
+    <code>console.log("Debug Fast")</code>
+    <li>Advanced IntelliSense</li>
+    <li>Node.js debug integration</li>
+    <li>Auto-import + Format on save</li>
+</section>
+<br>
+<br>
+<section class="main-section" id="Lang-Python">
+    <header>Python</header>
+    <p>Python in VS Code is a dream combo for AI, automation, and backend devs. Debugging, environments, Jupyter notebooks — fully supported.</p>
+    <p>Install official extension: <strong>Python</strong> (Microsoft)</p>
+    <code>python3 -m venv env</code>
+    <li>Virtual environment management</li>
+    <li>AI + Data Science tools</li>
+    <li>Jupyter Notebook integration</li>
+</section>
+<br>
+<br>
+<section class="main-section" id="Lang-CSharp">
+    <header>C#</header>
+    <p>C# support brings enterprise workflows and Unity game development straight into VS Code.</p>
+    <p>Install: <strong>C# Dev Kit</strong></p>
+    <code>dotnet build</code>
+    <li>Debugger for .NET</li>
+    <li>Unity integration</li>
+    <li>IntelliSense for enterprise apps</li>
+</section>
+<br>
+<br>
+<section class="main-section" id="Lang-Java">
+    <header>Java</header>
+
+    <p>Java support includes enterprise build tools, auto-formatting, and project templates to kickstart frameworks like Spring.</p>
+    <p>Install extension: <strong>Extension Pack for Java</strong></p>
+
+    <code>javac Main.java</code>
+
+    <br>
+
+    <li>Spring Boot support</li>
+    <li>Maven + Gradle integration</li>
+    <li>Debugger + IntelliSense</li>
+</section>
+<br>
+<br>
+    <section class="main-section" id="Data Sciences">
+        <header>Data Sciences</header>
+        <p>VS Code dominates the data science space because it integrates cleanly with Python, Jupyter, notbooks, AI models, and data visualization framework. The editor treats notebooks like real code files instead of isolated experiments.</p>
+        <br>
+        <p>Data Scientists get full environment control and reproducible workflors through Conda, virtualenv, or Docker containers, allowing consistent setups across teams and machines.</p>
+        
+        <code>docker build -t myapp .</code>
+        <br>
+        <li>Docker Explorer panel for images + containers</li>
+        <li>Kuburnetes resoure viewer</li>
+        <li>Debug apps running inside containers</li>
+
+    </section>
+    <br>
+    <br>
+
+        <section class="main-section" id="Intelligent_Apps">
+            <header>Intelligent Apps</header>
+            <p>AI-powered apps are easier to build in VS Code thanks to Python + JavaScript tooling and integrated machine learning extensions. You can prototype, experiment, and deoloy AI models withouth leaving the workspace.</p>
+            <br>
+            <p>Extensions like Github Copilot even generated code snippets, documentation, and logic on demand, accelerating development dramatically.</p>
+
+            <code>pip install trnasformers torch</code>
+            <br>
+            <li>Github Copilot AI assistance</li>
+            <li>Local and cloud-based model development</li>
+            <li>End-to-end ML pipeline support</li>
+        </section>
+    <br>
+    <br>
+        <section class="main-section" id="Dev_Containers">
+    <header>Dev Containers</header>
+
+    <p>Dev Containers solve the “works on my machine” problem by creating isolated development environments inside Docker. VS Code launches full workspaces inside containers with all dependencies preloaded.</p>
+
+    <p>This makes onboarding faster, eliminates version conflicts, and ensures every collaborator uses the exact same tools and settings.</p>
+
+    <code>Ctrl + Shift + P → “Dev Containers: Reopen in Container”</code>
+    <br>
+    <li>Recreates full dev setups from .devcontainer.json</li>
+    <li>Ideal for team collaboration and enterprise workflows</li>
+    <li>Supports databases, runtimes, frameworks, and CLIs</li>
+</section>
+
+    </main>
+</body>
+</html>
